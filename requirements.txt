@@ -1,2 +1,14 @@
-pandas
 requests
+psycopg2-binary
+psycopg2
+pandas
+pandas_gbq
+python-dotenv
+celery
+redis
+gspread
+flower
+celery-singleton
+sqlalchemy
+airflow-code-editor
+apache-airflow-providers-amazon

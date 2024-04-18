@@ -48,8 +48,8 @@ extract_api_data = PythonOperator(
 upload_to_s3 = S3CreateObjectOperator(
         task_id="upload_to_S3",
         aws_conn_id= 'aws_default',
-        s3_bucket='weather-data-gds',
-        s3_key='date={{ ds }}/weather_api_data.csv',
+        s3_bucket='aws-de-bootcamp-playground',
+        s3_key='weather-data/date={{ ds }}/weather_api_data.csv',
         data="{{ ti.xcom_pull(key='final_data') }}",
         dag=dag,
     )
